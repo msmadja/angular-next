@@ -1,0 +1,22 @@
+.products-list {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 16px; 
+
+    .product-item {
+        flex: 1 1 calc(50% - 16px); 
+        box-sizing: border-box;
+        height: 400px;
+    }
+
+    .tags { 
+        display: flex;
+        justify-content: center;
+        bottom: 0;
+        position: absolute;
+        width: 100%;
+    }
+}
+
+
+

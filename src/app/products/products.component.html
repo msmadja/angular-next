@@ -1,0 +1,24 @@
+<div class="products-list">
+  @for (item of productsService.products$; track item.name) {
+    <mat-card  class="product-item" appearance="outlined">
+      <mat-card-header>
+        <mat-card-title>{{item?.name}}</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+          "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."</p>
+      </mat-card-content>
+      <mat-card-footer class="tags">
+        <mat-chip-set aria-label="Chihuahua traits">
+          <mat-chip>Tag1</mat-chip>
+          <mat-chip>Tag2</mat-chip>
+          <mat-chip>Tag2</mat-chip>
+        </mat-chip-set>
+      </mat-card-footer>
+    </mat-card>
+  } 
+</div>
+
+<div class="products-actions">
+    <button mat-raised-button  (click)="addProduct()">Add product</button>
+</div>

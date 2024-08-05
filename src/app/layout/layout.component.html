@@ -1,0 +1,23 @@
+<mat-toolbar>
+    <span>My Application</span>
+  
+    <nav class="nav-links">
+      <a routerLink="/"  routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" class="nav-link">Home</a>
+      <a routerLink="/products" routerLinkActive="active" class="nav-link">Products</a>
+    </nav>
+  
+    <span class="spacer"></span>
+    
+    <button mat-icon-button class="icon favorite-icon" aria-label="Example icon-button with heart icon">
+      <mat-icon>favorite</mat-icon>
+    </button>
+    <button mat-icon-button class="icon" aria-label="Example icon-button with share icon">
+      <mat-icon>share</mat-icon>
+    </button>
+</mat-toolbar>
+
+<div class="app-container">
+<router-outlet />
+</div>
+
+

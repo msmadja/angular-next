@@ -1,0 +1,14 @@
+<p>products works!</p>
+
+
+<p #p>Here's the products page</p>
+
+<div>
+    <ol>
+      @for (item of productsService.products$; track item.name) {
+        <li>Name:{{item?.name}}, Price: {{item?.price}}</li>
+      }   
+    </ol>
+
+    <button (click)="addProduct()">Add product</button>
+</div>
